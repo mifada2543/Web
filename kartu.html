@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Nama Siswa SMK</title>
+    <style>
+        /* CSS untuk Styling Kartu Nama */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Ukuran standar kartu nama */
+        .business-card {
+            width: 3.5in; /* Sekitar 8.9 cm */
+            height: 2in; /* Sekitar 5.1 cm */
+            background-color: #1a1a1a; /* Latar belakang gelap */
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 15px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden; /* Pastikan tidak ada yang keluar dari batas */
+        }
+
+        /* Aksen garis tepi - mewakili integrasi */
+        .business-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #00BCD4, #4CAF50, #FF5722); /* PPLG, TKRO, TBSM */
+        }
+        
+        .photo-area {
+            flex-shrink: 0;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #333; /* Placeholder untuk foto */
+            border: 3px solid #00BCD4; /* Aksen biru elektrik */
+            overflow: hidden;
+        }
+
+        .photo-area-i img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info-area {
+            flex-grow: 1;
+        }
+
+        .info-area h1{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 3px 0;
+            color: #f7f7f7;
+            text-transform: uppercase;
+        }
+
+        .info-area p {
+            margin: 0;
+            font-size: 11px;
+            color: #b0b0b0;
+        }
+
+        .info-area .major {
+            font-size: 12px;
+            color: #00BCD4; /* Warna biru elektrik */
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .info-area .dream {
+            margin-top: 10px;
+            font-size: 10px;
+            font-style: italic;
+            color: #999;
+            border-top: 1px dashed #333;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;"><a href="Home.html" style="color: red;">Keluar</a></h2>
+
+<div class="business-card">
+    <div class="photo-area">
+        <img src="/img/pngm.png" alt=""> 
+    </div>
+
+    <div class="info-area">
+        <h1>Muhammad Daffa</h1>
+        <h3>Kelompok: 2</h3>
+        
+        <p class="major">
+            Jurusan: PPLG (Pengembangan Perangkat Lunak dan Gim)
+        </p>
+        
+        <p>
+            Kelas: X PPLG 1
+        </p>
+
+        <p class="dream">
+            Cita-cita: Programmer
+        </p>
+        
+    </div>
+</div>
+
+</body>
+</html>
