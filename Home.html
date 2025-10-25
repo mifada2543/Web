@@ -9,23 +9,41 @@
 </head>
 
 <body>
-    <video class="bg-video" autoplay loop muted>
-        <source src="video/Wallpaper.mp4" type="video/mp4">
+    <video class="bg-video" loop autoplay muted>
+        <source src="video/miku.mp4" type="video/mp4">
     </video>
-    <!-- musik -->
-     
-    <div class="kota">
+    <audio loop autoplay muted id="myAudio">
+        <source src="music/senbonzakara.webm" type="audio/webm">
+    </audio>
+    <table class="kota">
         <tr>
-        <h1>Selamat datang di website saya</h1>
-        <h1>Hatsune Miku</h1><br>
-        <h2>Hatsune miku adalah model vocaloid yang dirilis pertama kali di dunia pada tahun 2005</h2>
+            <td colspan="2">
+                <h1>Selamat datang di website saya Home</h1>
+                <div class="space">
+                    <button class="login" id="plybtn" onclick="tglplay()">Pause</button>
+                    <button class="login" id="mutebtn" onclick="tglmuted()">unmute</button>
+                </div>
+            </td>
         </tr>
-        <img src="img/pngm.png" alt="" height="100" width="100" border="2"><br><br><br><br>
-        <button type="button"><a href="Home.html">Home</a></button><br><br>
-        <button type="button"><a href="Page1.html">Page 1</a></button><br><br>
-        <button type="button"><a href="Page2.html">Page 2</a></button><br><br>
-        <p><a href="kartu.html">klik </a><a href="login.html">disini</a> untuk <a style="color: red;">Logout</a></p>
-    </div>
+        <tr>
+            <td rowspan="2">
+                <h1>Hatsune Miku</h1><br>
+                <h2>Hatsune Miku adalah vocaloid dengan nomor 01 yang diciptakan oleh crypton foundation pada tahun 2005
+                </h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/pngm.png" alt="" height="100" width="100" border="2"><br><br><br><br>
+                <button type="button"><a href="Home.html">Home</a></button><br><br>
+                <button type="button"><a href="Page1.html">Page 1</a></button><br><br>
+                <button type="button"><a href="Page2.html">Page 2</a></button><br><br>
+                <p>klik <a href="index.html">disini</a> untuk <a style="color: red;">Logout</a></p>
+
+            </td>
+        </tr>
+    </table>
 </body>
+<script src="script.js"></script>
 
 </html>
