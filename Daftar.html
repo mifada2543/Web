@@ -23,8 +23,7 @@
         <input type="password" name="password" id="password" placeholder="Masukkan password"><br><br>
         <label for="password">Verifikasi Password</label><br>
         <input type="password" name="password" id="password" placeholder="Masukkan password"><br><br>
-        <button type="submit" id="login" onclick="alert('username = user, password = user123')"
-            ondblclick="pass()">Login</button><br><br><br><br><br><br><br>
+        <button type="submit" id="login" onclick="alert('username = user, password = user123'); window.location.href = 'index.html'">Login</button><br><br><br><br><br><br><br>
         <!-- musik -->
         <audio loop autoplay muted id="myAudio">
             <source src="music/D N A 25時、ナイトコードで。 × 鏡音リン (192 KBps).mp3" type="audio/mp3">
@@ -34,12 +33,11 @@
             <button class="login" id="plybtn" onclick="tglplay()">Pause</button>
             <button class="login" id="mutebtn" onclick="tglmuted()">unmute</button>
         </div>
+        <br><br><button class="login" id="login" onclick="window.location.href = 'index.html'">kembali</button>
     </div>
 
 </body>
 <script src="script.js">
-    function pass() {
-        window.location.href = "index.html"
-    }</script>
+</script>
 
 </html>
