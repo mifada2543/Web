@@ -13,8 +13,8 @@
         <source src="video/kasane.mp4" type="video/mp4">
     </video>
     <audio loop autoplay muted id="myAudio">
-            <source src="music/teto.mp3" type="audio/mp3">
-        </audio>
+        <source src="music/teto.mp3" type="audio/mp3">
+    </audio>
     <table class="kota">
         <tr>
             <td colspan="2">
@@ -35,10 +35,13 @@
         <tr>
             <td>
                 <img src="img/bteto.png" alt="" height="100" width="100" border="2"><br><br><br><br>
-                <button type="button" class="login"><a href="Home.html">Home</a></button><br><br>
-                <button type="button" class="login"><a href="Page1.html">Page 1</a></button><br><br>
-                <button type="button" class="login"><a href="Page2.html">Page 2</a></button><br><br>
-                <p>klik <a href="index.html">disini</a> untuk <a style="color: red;">Logout</a></p>
+                <button type="button" class="login" onclick="window.location.href = 'Home.html'">Home</button><br><br>
+                <button type="button" class="login" onclick="window.location.href = 'Page1.html'">Page
+                    1</button><br><br>
+                <button type="button" class="login" onclick="window.location.href = 'Page2.html'">Page
+                    2</button><br><br>
+                <p>klik <button class="login" type="submit" onclick="window.location.href = 'index.html'"
+                        style="color: red;">disini</button> untuk keluar</p>
 
             </td>
         </tr>
