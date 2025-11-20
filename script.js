@@ -82,6 +82,9 @@ function validateLogin() {
         alert("login sebagai user");
         window.location.href = "Home.html";
         // You can add a redirect or other actions here for user
+    } else if (username === "pelajar" && password === "dwiguna") {
+        alert("login sebagai pelajar");
+        window.location.href = "project.html";
     } else {
         alert("Invalid username or password. Please try again.");
     }
